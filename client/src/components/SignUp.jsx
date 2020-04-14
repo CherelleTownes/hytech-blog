@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './SignUp.css'
 import { signUp, signIn } from '../services/user'
+import Nav from "./shared/Nav"
+import Footer from "./shared/Footer"
 
 class SignUp extends Component {
     constructor() {
@@ -61,6 +63,8 @@ class SignUp extends Component {
         const { email, username, password, passwordConfirmation } = this.state
 
         return (
+            <>
+            <Nav></Nav>
             <div className="form-container">
                 <h3>Sign Up</h3>
                 <form onSubmit={this.onSignUp}>
@@ -103,6 +107,8 @@ class SignUp extends Component {
                     {this.renderError()}
                 </form>
             </div>
+                <Footer></Footer>
+                </>
         )
     }
 }
