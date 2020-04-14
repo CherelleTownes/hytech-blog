@@ -1,14 +1,12 @@
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
-    background-color: #000033;
-    color: white;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  background-color: #000033;
+  color: white;
 }
-
 footer a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
