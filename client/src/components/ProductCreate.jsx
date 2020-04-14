@@ -45,21 +45,33 @@ class ProductCreate extends Component {
                 <form className="create-form" onSubmit={this.handleSubmit}>
                     <input
                         className="input-name"
-                        placeholder='Name'
+                        placeholder='Title'
                         value={product.name}
                         name='name'
                         required
                         autoFocus
                         onChange={this.handleChange}
-                    />
-                    <input
+              />
+              
+              <input
+                        className="input-name"
+                        placeholder='Sub-title'
+                        value={product.sub_title}
+                        name='sub_title'
+                        required
+                        autoFocus
+                        onChange={this.handleChange}
+              />
+              
+                    {/* <input
                         className="input-price"
-                        placeholder='Price'
+                        placeholder='Sub-title'
                         value={product.price}
                         name='price'
                         required
                         onChange={this.handleChange}
-                    />
+              /> */}
+            
                     <textarea
                         className="textarea-description"
                         rows={10}
@@ -77,7 +89,7 @@ class ProductCreate extends Component {
                         required
                         onChange={this.handleChange}
                     />
-                    <button type='submit' className="submit-button">Submit</button>
+                    <button type='submit' className="submit-button">Post your blog</button>
                 </form>
             </Layout>
         )
